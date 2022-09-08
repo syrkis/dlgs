@@ -2,11 +2,16 @@
 #   This file contains the Dataset class, which is used to load and store the data.
 # by: Noah Syrkis
 
+
+"""
+important concepts:
+1. We have a Dataset instance (ds) that spits out MNIST (x, y) TENSOR pairs.
+2. On init we load the data.csv file and do a little preprocessing (divide by 255).
+3. We have a __len__ method that returns the length of the dataset.
+"""
+
 # imports
 import torch
-
-from matplotlib import pyplot as plt
-import seaborn as sns
 
 
 # mnist dataset
